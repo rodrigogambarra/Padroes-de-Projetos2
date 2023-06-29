@@ -9,7 +9,7 @@
 <a href="#funcionalidades-e-descrição-dos-padrões-utilizados">Funcionalidades</a> |
 <a href="#tecnologias-utilizadas">Tecnologias</a> |
 <a href="#serviços-usados">Serviços usados</a> |
-<a href="#padroes-de-projetos-utilizados">Padrões de projetos utilizados</a> |
+<a href="#padrões-de-projetos-utilizados">Padrões de projetos utilizados</a> |
 <a href="#pré-requisitos">Pré-requisitos</a> |
 <a href="#links">Links</a> |
 <a href="#autor">Autor</a></p>
@@ -130,7 +130,7 @@ Mais detalhes sobre este padrão: https://refactoring.guru/pt-br/design-patterns
 Foi utilizado o padrão Proxy com a implementação da classe OrçamentoProxy, que intercepta o método "getValor()" da classe Orcamento. O método "getValor()" da classe Orcamento simula uma requisição externa a uma Api muito demorada e custosa. O padrão Proxy neste caso irá trazer maior desempenho ao sistema verificando se o atributo valor já foi recuperado pela Api externa,
 caso já tenha sido recuperado ele retornará o valor instantaneamente a quem solicitou, sem fazer a requisição novamente à Api externa. Ou seja, na primeira requisição o atributo valor será nulo, portanto será feita a requisição à Api externa, já nas próximas chamadas do método "getValor()" da classe OrcamentoProxy, ele irá retornar o valor instantaneamente.
 
-Mais detalhes sobre este padrão: https://refactoring.guru/pt-br/design-patterns/facade
+Mais detalhes sobre este padrão: https://refactoring.guru/pt-br/design-patterns/proxy
 
 ## Pré-requisitos
 Java 20
